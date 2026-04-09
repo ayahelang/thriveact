@@ -1,7 +1,7 @@
-// VaultEdge Custom JS
+// ThriveAct Custom JS
 
 // Sticky navbar on scroll
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var header = document.getElementById('ve-sticky');
     if (header) {
         if (window.scrollY > 50) {
@@ -16,7 +16,7 @@ window.addEventListener('scroll', function() {
 var toggler = document.getElementById('ve-toggle');
 var mobileMenu = document.getElementById('ve-mobile-menu');
 if (toggler && mobileMenu) {
-    toggler.addEventListener('click', function() {
+    toggler.addEventListener('click', function () {
         mobileMenu.classList.toggle('open');
     });
 }
@@ -24,12 +24,12 @@ if (toggler && mobileMenu) {
 // Counter animation
 function animateCounters() {
     var counters = document.querySelectorAll('.counter');
-    counters.forEach(function(counter) {
+    counters.forEach(function (counter) {
         var target = parseInt(counter.getAttribute('data-count'));
         var count = 0;
         var duration = 2000;
         var step = target / (duration / 16);
-        var timer = setInterval(function() {
+        var timer = setInterval(function () {
             count += step;
             if (count >= target) {
                 counter.textContent = target.toLocaleString();
@@ -45,7 +45,7 @@ function animateCounters() {
 var counterSection = document.querySelector('.ve-counter-section');
 if (counterSection) {
     var triggered = false;
-    var observer = new IntersectionObserver(function(entries) {
+    var observer = new IntersectionObserver(function (entries) {
         if (entries[0].isIntersecting && !triggered) {
             triggered = true;
             animateCounters();
@@ -55,11 +55,11 @@ if (counterSection) {
 }
 
 // FAQ accordion toggle
-document.querySelectorAll('.ve-faq-q').forEach(function(q) {
-    q.addEventListener('click', function() {
+document.querySelectorAll('.ve-faq-q').forEach(function (q) {
+    q.addEventListener('click', function () {
         var item = this.closest('.ve-faq-item');
         var wasOpen = item.classList.contains('open');
-        document.querySelectorAll('.ve-faq-item').forEach(function(i) { i.classList.remove('open'); });
+        document.querySelectorAll('.ve-faq-item').forEach(function (i) { i.classList.remove('open'); });
         if (!wasOpen) item.classList.add('open');
     });
 });
