@@ -173,14 +173,3 @@
 
 })(jQuery);
 
-// MOBILE MENU TOGGLE
-document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById("ve-toggle");
-    const menu = document.getElementById("ve-mobile-menu");
-
-    if (toggle && menu) {
-        toggle.addEventListener("click", function () {
-            menu.classList.toggle("active");
-        });
-    }
-});
