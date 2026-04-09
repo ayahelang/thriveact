@@ -22,7 +22,6 @@
 
   <body>
     <!-- Preloader -->
-
     <div class="preloader d-flex align-items-center justify-content-center">
       <div class="lds-ellipsis">
         <div></div>
@@ -35,10 +34,11 @@
     <!-- Header -->
     <header class="ve-header" id="ve-sticky">
       <div class="container-fluid ve-nav-wrap">
+        <!-- Logo -->
         <div class="ve-logo">
-          <a href="index.html"
-            ><span class="ve-logo-icon">T</span
-            ><span class="ve-logo-text">Thrive<strong>Act</strong></span>
+          <a href="index.html">
+            <span class="ve-logo-icon">T</span>
+            <span class="ve-logo-text">Thrive<strong>Act</strong></span>
           </a>
         </div>
         <!-- Navbar -->
@@ -58,14 +58,28 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+        <!-- CTA -->
         <div class="ve-nav-cta">
           <a href="contact.html" class="ve-cta-btn"
             >Plan Your Event <i class="fa fa-arrow-right"></i>
           </a>
         </div>
+
+        <!-- Mobile Toggle -->
         <button class="ve-toggler" id="ve-toggle">
           <span></span><span></span><span></span>
         </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="ve-mobile-menu" id="ve-mobile-menu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="post.html">Moments</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
     </header>
 
@@ -605,6 +619,6 @@
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/plugins/plugins.js"></script>
     <script src="js/active.js"></script>
-    <script src="js/vaultedge.js"></script>
+    <script src="js/jw.js"></script>
   </body>
 </html>
